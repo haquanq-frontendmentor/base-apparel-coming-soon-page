@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main class="main__container">
+      <div class="main__logo--mobile-wrapper">
+        <img class="main__logo--mobile" src="./assets/images/logo.svg" alt="Base Apparel logo" />
+      </div>
+      <picture class="main__image-wrapper">
+        <source srcset="./assets/images/hero-desktop.jpg" media="(min-width: 64em)" />
+        <img
+          class="main__image"
+          src="./assets/images/hero-mobile.jpg"
+          alt="A girl throwing tantrum but looking kinda cute LMAO"
+        />
+      </picture>
+      <div class="main__content">
+        <img
+          class="main__content--bg-pattern"
+          src="./assets/images/bg-pattern-desktop.svg"
+          alt=""
+        />
+        <img class="main__logo--desktop" src="./assets/images/logo.svg" alt="Base Apparel logo" />
+        <h1 class="main__headline">
+          <span class="main__headline--thin">We're</span>
+          <span class="main__headline--bold"> coming soon</span>
+        </h1>
+        <p class="main__description">
+          Hello fellow shoppers! We're currently building our new fashion store. Add your email
+          below to stay up-to-date with announcements and our launch deals
+        </p>
+        <form class="main__form" action="">
+          <label class="textbox" for="email-address">
+            <span class="sr-only">Your email address</span>
+            <input
+              class="textbox__input"
+              id="email-address"
+              type="email"
+              placeholder="Email Address"
+              autocomplete="off"
+              aria-invalid="false"
+              aria-required="true"
+              aria-describedby="error-msg"
+            />
+            <img
+              class="textbox__error-icon"
+              src="./assets/icons/icon-error.svg"
+              alt="Error icon"
+              aria-hidden="true"
+            />
+          </label>
+          <span class="main__form__outline"></span>
+          <span class="textbox__error-text" id="error-input-hint"></span>
+          <button class="main__form__btn" type="submit" aria-label="Submit">
+            <span class="main__form__btn--overlay"></span>
+            <img src="./assets/icons/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
