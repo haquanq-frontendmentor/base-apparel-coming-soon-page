@@ -9,7 +9,10 @@ mainForm.addEventListener("submit", (e) => {
         mainForm.classList.add("error");
         emailErrorText.textContent = "Can't be empty";
         emailInput.setAttribute("aria-invalid", "true");
+        return;
     }
+
+    alert("We have received your email! HAHAHAHAAHAHAHAHAH");
 });
 
 emailInput.addEventListener("invalid", (e) => {
