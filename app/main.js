@@ -1,30 +1,31 @@
-const mainForm = document.querySelector(".main__form");
-const emailInput = document.querySelector("#email-address");
-const emailErrorText = document.querySelector(".textbox__error-text");
+const subscribeForm = document.querySelector(".subscribe__form");
+const emailInput = document.querySelector("#email-input");
+const emailHint = document.querySelector("#email-input-hint");
 
-mainForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
+const validateEmail = () => {
+    let errorMessage = "";
     if (emailInput.value == "") {
-        mainForm.classList.add("error");
-        emailErrorText.textContent = "Can't be empty";
-        emailInput.setAttribute("aria-invalid", "true");
-        return;
+        errorMessage = "Please fill out this field.";
+    } else if (/^[^@]+@[^@]+\.[^@]+$/.test(emailInput.value) === false) {
+        errorMessage = "Please provide a valid email address.";
     }
 
-    alert("We have received your email! HAHAHAHAAHAHAHAHAH");
-});
-
-emailInput.addEventListener("invalid", (e) => {
-    e.preventDefault();
-    mainForm.classList.add("error");
-    emailErrorText.textContent = "Please provide a valid email";
-    emailInput.setAttribute("aria-invalid", "true");
-    emailInput.focus();
-});
-
-emailInput.addEventListener("input", (e) => {
-    mainForm.classList.remove("error");
+    if (errorMessage !== "") {
+        emailInput.setAttribute("aria-invalid", "true");
+        emailHint.textContent = errorMessage;
+        emailInput.focus();
+        return false;
+    }
+    emailHint.textContent = "";
     emailInput.setAttribute("aria-invalid", "false");
-    emailErrorText.textContent = "";
+    return true;
+};
+
+subscribeForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (validateEmail() === true) {
+        alert("Subcribed!");
+        subscribeForm.reset();
+    }
 });

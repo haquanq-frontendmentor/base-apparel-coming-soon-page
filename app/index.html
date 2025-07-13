@@ -31,37 +31,31 @@
         <img class="main__logo--desktop" src="./assets/images/logo.svg" alt="Base Apparel logo" />
         <h1 class="main__headline">
           <span class="main__headline--thin">We're</span>
-          <span class="main__headline--bold"> coming soon</span>
+          <span class="main__headline--bold">coming soon</span>
         </h1>
         <p class="main__description">
           Hello fellow shoppers! We're currently building our new fashion store. Add your email
           below to stay up-to-date with announcements and our launch deals
         </p>
-        <form class="main__form">
-          <label class="textbox" for="email-address">
-            <span class="sr-only">Your email address</span>
-            <input
-              class="textbox__input"
-              id="email-address"
-              type="email"
-              placeholder="Email Address"
-              autocomplete="off"
-              aria-invalid="false"
-              aria-required="true"
-              aria-describedby="error-input-hint"
-            />
+        <form class="subscribe__form" novalidate>
+          <input
+            class="subscribe__input"
+            id="email-input"
+            type="email"
+            placeholder="Email Address"
+            required
+            aria-label="Email address"
+            aria-invalid="false"
+            aria-describedby="email-input-hint"
+          />
+          <span class="subscribe__overlay"></span>
+          <span class="subscribe__hint" id="email-input-hint"></span>
+          <button class="subscribe__submit-btn" type="submit" aria-label="Submit">
             <img
-              class="textbox__error-icon"
-              src="./assets/icons/icon-error.svg"
-              alt="Error icon"
-              aria-hidden="true"
+              class="subscribe__submit-btn--icon"
+              src="./assets/icons/icon-arrow.svg"
+              alt="Arrow icon"
             />
-          </label>
-          <span class="main__form__outline"></span>
-          <span class="textbox__error-text" id="error-input-hint"></span>
-          <button class="main__form__btn" type="submit" aria-label="Submit">
-            <span class="main__form__btn--overlay"></span>
-            <img src="./assets/icons/icon-arrow.svg" alt="" />
           </button>
         </form>
       </div>
