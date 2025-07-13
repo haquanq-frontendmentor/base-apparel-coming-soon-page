@@ -2,11 +2,16 @@
 
 This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## The challenge
+## Table of contents
 
-- No access to design files, attempt pixel-perfect
+- [Project overview](#rocket-project-overview)
+- [Development workflow](#boat-development-workflow)
+- [Working in this repository](#astronaut-working-in-this-repository)
+- [License](#page_with_curl-license)
 
-Users should be able to:
+## :rocket: Project overview
+
+### Challenge equirements
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -14,19 +19,44 @@ Users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-## Solution
+### Implemented features
 
-- Mobile-first workflow
-- Accessible email form
-- Built with: `HTML` `CSS` `JS`
+Accessibility
+
+- [x] Responsive accross different screen sizes
+- [x] Added custom indicator when interactive elements focused
+
+### Preview
 
 ![](./.docs/design/desktop-design.jpg)
 
-# Working in `fm-base-apparel-coming-soon` repository
+## :boat: Development workflow
 
-## Clone this project to your machine
+### Approach
 
-Make sure you have Git + NodeJS installed in your system, open new terminal, run the following command:
+Developed with mobile-first workflow, followed with [ARIA Authoring Practices Guide (APG)](https://www.w3.org/WAI/ARIA/apg/)
+
+### Built with
+
+| Tool          | Note                               |
+| ------------- | ---------------------------------- |
+| `HTML`        | Standard markup language           |
+| `CSS`         | Vanilla CSS                        |
+| `JavaScript`  | Vanilla JS                         |
+| `BrowserSync` | Development server, live reloading |
+
+## :astronaut: Working in this repository
+
+### Presequisites
+
+Having these tools installed:
+
+- Git (prefer lastest LTS version)
+- NodeJS (prefer latest LTS version)
+
+### Clone this project to your machine
+
+Open new terminal, run the following command:
 
 ```
 git clone https://github.com/haquanq/fm-base-apparel-coming-soon.git
@@ -45,3 +75,7 @@ In terminal, run `npm run dev` to start development server:
 ```
 npm run dev
 ```
+
+# :page_with_curl: License
+
+This project follows [MIT License](./LICENSE). **DO NOT** use this project as your solution on [Frontend mentor](https://www.frontendmentor.io/solutions).
