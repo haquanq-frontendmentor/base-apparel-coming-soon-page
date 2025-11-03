@@ -20,6 +20,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   /></a>
 </p>
 
+![](./docs/preview.jpg)
+
 ## Table of contents
 
 - [Project overview](#sunrise-project-overview)
@@ -48,8 +50,6 @@ Accessibility
 - [x] Interactive elements have clear focus indicator
 
 ### Preview
-
-![](./docs/design/desktop-design.jpg)
 
 ## :stars: Development workflow
 
