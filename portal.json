@@ -1,0 +1,15 @@
+{
+  "name": "Base Apparel Coming Soon Page",
+  "featured": false,
+  "colors": {
+    "brand": "#EB7775"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/base-apparel-coming-soon-page/main/docs/preview.jpg"
+  },
+  "frontendmentor": {
+    "difficulty": "newbie",
+    "challengeUrl": "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
+    "solutionUrl": "https://www.frontendmentor.io/solutions/responsive-coming-soon-page-w-html---css-flexbox---js-DOLlqm9sIj"
+  }
+}
